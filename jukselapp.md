@@ -23,6 +23,8 @@ Liste over forskjellige begreper og hva de kan oversettes til. Jeg er ikke en of
 | `*` | Multiplikasjon |
 | `/` | Divisjon |
 | `%` | Rest |
+Mattematikk i programmering er ikke begrenset til bare tall, så å plusse to strenger sammen er helt innenfor.  
+**Eksempel:** `"Matte" + "matikk" = Mattematikk`
 
 ---
 
