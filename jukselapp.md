@@ -42,9 +42,9 @@ Forskjellige typer integers/heltall:
 | `byte` | byte | Det samme som `uint8`, altså 8 positive bit. |
 | `rune` | rune | Det samme som `int32`, altså 64 bit positive eller negative. |
 
-> **Spesielle typer heltall:** `uint8`, `uint16`, `uint32`, `uint64`, `int8`, `int16`, `int32` og `in64`.  
-> Tallene bak forteller hvor mange bits hver type bruker.  
->
+**Spesielle typer heltall:** `uint8`, `uint16`, `uint32`, `uint64`, `int8`, `int16`, `int32` og `in64`.  
+Tallene bak forteller hvor mange bits hver type bruker.  
+
 > **Eksempel:** `uint8` forventer 8 positive bits.
 
 ### Floating-Point Numbers
@@ -55,11 +55,13 @@ Forskjellige typer integers/heltall:
     * NaN (Not A Number): ting som 0 av 0
     * Positiv og Negativ uendelig
 
-> Go bruker to forskjellige typer desimaltall, `float32` og `float64`.  
+Go bruker to forskjellige typer desimaltall, `float32` og `float64`.  
 Disse er ofte nevnt som `single precision` og `double precision`.  
 
-_Standarden er å jobbe med `float64` så langt det er mulig._
-> I tillegg er det to ekstra typer for å representere komplekse nummere (imaginære nummere): `complex64` og `complex128`.
+> _Standarden er å jobbe med `float64` så langt det er mulig._
+
+I tillegg er det to ekstra typer for å representere komplekse nummere (imaginære nummere):  
+`complex64` og `complex128`.
 
 ### Strings
 
