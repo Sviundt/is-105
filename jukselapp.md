@@ -13,6 +13,7 @@ Liste over forskjellige begreper og hva de kan oversettes til. Jeg er ikke en of
 | **[Integers](#Integers)** | Heltall | Alle tall som kan skrives uten komma. |
 | **[Floating-Point Numbers](#Floating-Point-Numbers)** | Desimaltall | Alle tall som ikke er heltall. |
 | **[Strings](#Strings)** | Streng | En liste med tegn med en bestemt lengde. |
+| **[Booleans](#Booleans)** | Booleanske verdier | Verdier som kun kan være `true` eller `false`. |
 
 ### Mattematikk
 
@@ -68,3 +69,50 @@ Forskjellen mellom disse er at tekst mellom hermetegn ikke kan gå over flere li
 
 * "\n" som blir byttet ut med en ny linje
 * "\t" som blir byttet ut med en tab
+
+**Andre ting å bemerke om strenger:**  
+
+* Alle tegn inne i en streng regnes som en del av strengen. Dette gjelder også mellomrom.
+* Strenger starter fra `0`, ***ikke*** `1`, når man teller antall tegn.
+* Om du ber om ett spesifikt tegn inne i en streng, så vil dette returneres som en [`int`](#Integers) med byte koden til tegnet.
+* Konkatenering (å sette sammen), er hva vi gjør for å slå sammen to strenger. Bare tenk på det som vanlig addisjon, men med bokstaver.
+
+**Funksjoner ofte benyttet i strings:**  
+| Funksjon | Hva den gjør |
+|-|-|
+| `len` | Finner lengden på en string |
+| `[nummer]` | Går til et tegn inne i strengen. Starter ***ikke*** å telle fra `1`, men fra `0`. |
+| `+`| Slår sammen to strenger. Se [Mattematikk](#Mattematikk) for mer utdypende informasjon. |
+
+### Booleans
+
+Booleanske verdier kan bare være `true` eller `false`. Egentlig er det en 1-bit integer verdi, men vi bruker det som en egen datatype.  
+Vi bruker tre forskjellige logiske operatører i sammenheng med Booleanske verdier.
+
+| Type | Leses som | Forklaring |
+|------|-----------|------------|
+| `&&` | and | Begge verdier må være like for at dette skal gå opp |
+| `||` | or | Verdien er enten det ene eller det andre |
+| `!` | not | Ikke denne verdien |
+
+**Oversikt:** `and`
+| Uttrykk | Verdi |
+|---------|-------|
+| `true && true` | `true` |
+| `true && false` | `false` |
+| `false && true` | `false` |
+| `false && false` | `false` |
+
+**Oversikt:** `or`
+| Uttrykk | Verdi |
+|---------|-------|
+| `true || true` | `true` |
+| `true || false` | `true` |
+| `false || true` | `true` |
+| `false || false` | `false` |
+
+**Oversikt:** `not`
+| Uttrykk | Verdi |
+|---------|-------|
+| `!true` | `false` |
+| `!false` | `true`|
