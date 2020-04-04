@@ -1,8 +1,14 @@
 // Nedprioritert til jeg finner ut hvordan golang funker
 package main
 
-import "fmt"
+import (
+	"log"
+	"net/http"
+)
 
 func main() {
-	fmt.Println("Under konstruksjon") // placeholder for at ikke Travis CI skal klage
+
+	http.Handle("/", http.FileServer(http.Dir("./site")))
+
+	log.Fatal(http.ListenAndServe(":4040", nil))
 }
